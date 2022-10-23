@@ -1,6 +1,14 @@
 # PhoenixEvolution
 
-Having spent some time away, I wanted to do a little investigation into how Phoenix new project creation evolve over the last few versions. This is probably of interest to no-one except me.
+Having spent some time away, I wanted to do a little investigation into how Phoenix has changed over the past few versions, I was mainly interested in:
+
+* What has changed in the project structure?
+* Which bits of web technology (by which I mainly mean JavaScript/CSS) have come and gone?
+* How have the various dependencies/versions thereof evolved?
+* What was the story of channels and LiveView?
+
+I've certainly found it interesting to look through the commits to see changes version to version. Unfortunately I got caught out with `{:phoenix, "~> 1.x.x"}` and so missed early verions in the `1.5.x` range. I'm looking forward to seeing what happens in Phoenix 1.7 after [Chris's tantalising LiveView 0.18 Blog](https://www.phoenixframework.org/blog/phoenix-liveview-0.18-released).
+
 
 ```shell
 
