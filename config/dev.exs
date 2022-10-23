@@ -60,7 +60,7 @@ config :phoenix_evolution, PhoenixEvolutionWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/phoenix_evolution_web/{live,views}/.*(ex)$",
+      ~r"lib/phoenix_evolution_web/(live|views)/.*(ex)$",
       ~r"lib/phoenix_evolution_web/templates/.*(eex)$"
     ]
   ]
