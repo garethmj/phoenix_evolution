@@ -4,8 +4,9 @@ import Config
 config :phoenix_evolution, PhoenixEvolution.Repo,
   username: "postgres",
   password: "postgres",
-  database: "phoenix_evolution_dev",
   hostname: "localhost",
+  database: "phoenix_evolution_dev",
+  stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
@@ -22,7 +23,7 @@ config :phoenix_evolution, PhoenixEvolutionWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "aB0dJbOrdPhh1+1VEIlW83Sq5phQUQtddp7UNiZiR8Y7z+5y3HLs9QEl8asdU410",
+  secret_key_base: "pfTs2aQRFCLt9H+FVnHi3xD2+XSX7vTqq0v9nH71ST0zKmwIxSRUhjblsap8XO0I",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}

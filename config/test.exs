@@ -8,8 +8,8 @@ import Config
 config :phoenix_evolution, PhoenixEvolution.Repo,
   username: "postgres",
   password: "postgres",
-  database: "phoenix_evolution_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
+  database: "phoenix_evolution_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 
@@ -17,7 +17,7 @@ config :phoenix_evolution, PhoenixEvolution.Repo,
 # you can enable the server option below.
 config :phoenix_evolution, PhoenixEvolutionWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "4oCxuC87an+6gCFmhRvc93w5a2FkxxanTPI4ZY2UN/wIq4U4jXlWdcMXtVtI2lI4",
+  secret_key_base: "aXXwhgbyRj2ogOas8yiUIodTeAK+YDBoqYJXbzIQzqTpYopmASJwHHqPYXjg8X+f",
   server: false
 
 # In test we don't send emails.

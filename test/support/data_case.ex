@@ -28,9 +28,16 @@ defmodule PhoenixEvolution.DataCase do
   end
 
   setup tags do
+    PhoenixEvolution.DataCase.setup_sandbox(tags)
+    :ok
+  end
+
+  @doc """
+  Sets up the sandbox based on the test tags.
+  """
+  def setup_sandbox(tags) do
     pid = Ecto.Adapters.SQL.Sandbox.start_owner!(PhoenixEvolution.Repo, shared: not tags[:async])
     on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
-    :ok
   end
 
   @doc """

@@ -7,7 +7,7 @@ defmodule PhoenixEvolutionWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_phoenix_evolution_key",
-    signing_salt: "HMM5ytwl"
+    signing_salt: "RoBqOw8P"
   ]
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
