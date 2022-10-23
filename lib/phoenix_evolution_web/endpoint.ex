@@ -7,12 +7,8 @@ defmodule PhoenixEvolutionWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_phoenix_evolution_key",
-    signing_salt: "JRov1Aw2"
+    signing_salt: "HMM5ytwl"
   ]
-
-  socket "/socket", PhoenixEvolutionWeb.UserSocket,
-    websocket: true,
-    longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
@@ -24,7 +20,7 @@ defmodule PhoenixEvolutionWeb.Endpoint do
     at: "/",
     from: :phoenix_evolution,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(assets fonts images favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
