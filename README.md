@@ -3,7 +3,7 @@
 A little investigation into how Phoenix new project creation evolve over the last few versions.
 
 ```shell
-  > mix archive.install hex phx_new 1.4.10                                                                                                                                                                                  
+  > mix archive.install hex phx_new 1.4.10
 
   Dependency resolution completed:
   New:
@@ -16,7 +16,8 @@ A little investigation into how Phoenix new project creation evolve over the las
   Are you sure you want to install "phx_new-1.4.10.ez"? [Yn]
   * creating /Users/gareth/.asdf/installs/elixir/1.10.3-otp-23/.mix/archives/phx_new-1.4.10
 
-  > mix phx.new phoenix_evolution                                                                                                                                                                                            
+  > mix phx.new phoenix_evolution
+  
   * creating phoenix_evolution/config/config.exs
   * creating phoenix_evolution/config/dev.exs
   * creating phoenix_evolution/config/prod.exs
