@@ -13,10 +13,10 @@ config :phoenix_evolution,
 # Configures the endpoint
 config :phoenix_evolution, PhoenixEvolutionWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "5eW67QdIbaswfStizvVcx52gUnW9Dx44nB2HpBgZk+Jqz0T5JYmQG6rc8UkZfQ5C",
-  render_errors: [view: PhoenixEvolutionWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: PhoenixEvolution.PubSub, adapter: Phoenix.PubSub.PG2],
-  live_view: [signing_salt: "r3YhtSpe"]
+  secret_key_base: "WiQdx9FSa0B9p29hn8wAETj5Z8r0xIua22QeQIfnPcd2mXE99+pQ3VLWGYBG+Rll",
+  render_errors: [view: PhoenixEvolutionWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: PhoenixEvolution.PubSub,
+  live_view: [signing_salt: "6yIsoHO0"]
 
 # Configures Elixir's Logger
 config :logger, :console,
